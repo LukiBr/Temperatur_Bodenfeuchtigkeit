@@ -8,3 +8,5 @@ Hardware:
 - 10x DS18b20 Temperatursensor
 - 10x Capacitive moisture soil sensor v1.2
 
+Cronjob der es ermöglicht jede 15 Minuten eine Messung vorzunehmen:
+crontab -e */15 * * * * python3 /home/pi/Temperatur_Bodenfeuchtigkeit/main.py
